@@ -1,0 +1,22 @@
+# Setup
+title:        Kalyzee Tech Blog
+tagline:      Open source production by Kalyzee
+baseurl:      ""
+paginate:     1
+
+# About/contact
+author:
+  name:       Ludovic Bouguerra
+  url:        https://kalyzee.github.io
+  github: https://github.com/Kalyzee
+  
+sdk:
+  remote_sdk_py : https://github.com/Kalyzee/kast-client
+  remote_sdk_js : https://github.com/Kalyzee/kast-client-js
+
+# Gems
+gems:
+  - jekyll-paginate
+
+#Others
+markdown: kramdown
