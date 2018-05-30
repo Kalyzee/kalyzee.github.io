@@ -1,3 +1,9 @@
+body{
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
 .docs-header {
     color: #fff;
     line-height:25px;
@@ -21,6 +27,10 @@
     color: #FFF !important;
 }
 
+.main-content{
+  flex: 1;
+}
+
 .btn{
   background-color: #17BF87;
 
@@ -31,6 +41,51 @@
 
 }
 
-.row {
-	display: flex;
+.row{
+  display: flex;
+}
+
+.doc{
+  flex-direction: row;
+  display: flex;
+}
+
+.main-content{
+  width: 100%;
+}
+
+.menu{
+  width: 200px;
+}
+
+.menu h2{
+    margin: 0;
+    padding: 0;
+}
+
+.menu ul{
+  margin: 2px;
+  margin-left: 10px;
+  padding: 0;
+
+}
+
+.site-footer{
+  background: black;
+  height: 200px;
+}
+
+.content{
+  width: 100%;
+  flex: 1;
+}
+
+
+@media screen and (min-width: 64em) { .doc.main-content { max-width: 84rem; padding: 2rem 6rem; margin: 0 auto; font-size: 1.1rem; } }
+@media screen and (min-width: 42em) and (max-width: 64em) {  } }
+@media screen and (max-width: 42em) { .doc.main-content {  } }
+
+.menu ul li{
+  list-style-type: none;
+  text-align: left;
 }
